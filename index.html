@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TJtech</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/3426e33aea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="nav">
+    <ul class="nav__ul">
+      <li class="nav__li"><a href="#"><i class="fas fa-home"></i> Home</a></li>
+      <li class="nav__li"><a href="#"><i class="fas fa-shopping-bag"></i> Shop</a></li>
+      <li class="nav__li"><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+      <li class="nav__li"><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      <li class="licart"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+    </ul>
+  </nav>
+  <nav class="nav__responsive">
+    <div class="menu-icon">
+      <i class="fa fa-bars"></i>
+    </div>
+    <ul class="nav__responsive__ul">
+      <li class="nav__li-responsive"><a href="#"><i class="fas fa-home"></i> Home</a></li>
+      <li class="nav__li-responsive"><a href="#"><i class="fas fa-shopping-bag"></i> Shop</a></li>
+      <li class="nav__li-responsive"><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+      <li class="nav__li-responsive"><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>TJtech</h1>
+    <p>Stylish and functional furniture for modern living</p>
+  </header>
+
+  <main>
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <!-- Flipper Zero Product -->
+      <div class="product-card">
+        <div class="image-slider">
+          <img src="https://shop.flipperzero.one/cdn/shop/products/top_1024x1024@2x.png?v=1671722838" alt="Flipper Zero - Top View" class="active">
+          <img src="https://shop.flipperzero.one/cdn/shop/products/side_1024x1024@2x.png?v=1671722838" alt="Flipper Zero - Side View">
+          <img src="https://shop.flipperzero.one/cdn/shop/products/bottom-uwu_1024x1024@2x.png?v=1671722807" alt="Flipper Zero - Bottom View">
+          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+          <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+        <h3>Flipper Zero</h3>
+        <p>$199.99</p>
+        <button class="buy-button" data-product="flipper-zero">Buy Now</button>
+      </div>
+      
+      <!-- New Product 1 -->
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/71aI9cFqC6L._AC_SL1500_.jpg" alt="New Product 1">
+        <h3>New Product 1</h3>
+        <p>$149.99</p>
+        <button class="buy-button" data-product="new-product-1">Buy Now</button>
+      </div>
+
+      <!-- New Product 2 -->
+      <div class="product-card">
+        <img src="https://store.rokland.com/cdn/shop/products/LILYGOT-Echo_28_610x610_crop_center.png?v=1658851781" alt="New Product 2">
+        <h3>New Product 2</h3>
+        <p>$129.99</p>
+        <button class="buy-button" data-product="new-product-2">Buy Now</button>
+      </div>
+
+      <!-- New Product 3 -->
+      <div class="product-card">
+        <img src="https://i.ebayimg.com/images/g/IYYAAOSwlLFmiXjn/s-l960.webp" alt="New Product 3">
+        <h3>New Product 3</h3>
+        <p>$99.99</p>
+        <button class="buy-button" data-product="new-product-3">Buy Now</button>
+      </div>
+
+      <!-- New Product 4 with Slider -->
+      <div class="product-card">
+        <div class="image-slider">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKur9OA_IkQYE709BXp-PdnR2dGr0ReCtvPA&s" alt="New Product 4 - Image 1" class="active">
+          <img src="https://greatscottgadgets.com/images/h1-preliminary1-445.jpeg" alt="New Product 4 - Image 2">
+          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+          <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+        <h3>New Product 4</h3>
+        <p>$129.99</p>
+        <button class="buy-button" data-product="new-product-4">Buy Now</button>
+      </div>
+
+      <!-- Additional Products -->
+      <div class="product-card">
+        <img src="https://greatscottgadgets.com/images/ANT500-preliminary1-129.jpeg" alt="New Product 5">
+        <h3>New Product 5</h3>
+        <p>$79.99</p>
+        <button class="buy-button" data-product="new-product-5">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="https://greatscottgadgets.com/images/ANT700-preliminary1-150.jpeg" alt="New Product 6">
+        <h3>New Product 6</h3>
+        <p>$89.99</p>
+        <button class="buy-button" data-product="new-product-6">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="https://greatscottgadgets.com/images/Cynthion-2.jpg" alt="New Product 7">
+        <h3>New Product 7</h3>
+        <p>$119.99</p>
+        <button class="buy-button" data-product="new-product-7">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="https://greatscottgadgets.com/images/greatfet-final.jpeg" alt="New Product 8">
+        <h3>New Product 8</h3>
+        <p>$99.99</p>
+        <button class="buy-button" data-product="new-product-8">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="https://greatscottgadgets.com/images/daffodil-prototype.jpeg" alt="New Product 9">
+        <h3>New Product 9</h3>
+        <p>$109.99</p>
+        <button class="buy-button" data-product="new-product-9">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="https://greatscottgadgets.com/greatfet/acrylic-case/" alt="New Product 10">
+        <h3>New Product 10</h3>
+        <p>$49.99</p>
+        <button class="buy-button" data-product="new-product-10">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="https://greatscottgadgets.com/images/greatfet-final-4.jpeg" alt="New Product 11">
+        <h3>New Product 11</h3>
+        <p>$89.99</p>
+        <button class="buy-button" data-product="new-product-11">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="https://greatscottgadgets.com/images/cac-h1.jpeg" alt="New Product 12">
+        <h3>New Product 12</h3>
+        <p>$69.99</p>
+        <button class="buy-button" data-product="new-product-12">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="https://greatscottgadgets.com/images/tsltp.jpeg" alt="New Product 13">
+        <h3>New Product 13</h3>
+        <p>$59.99</p>
+        <button class="buy-button" data-product="new-product-13">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="https://greatscottgadgets.com/images/tsltk.jpeg" alt="New Product 14">
+        <h3>New Product 14</h3>
+        <p>$69.99</p>
+        <button class="buy-button" data-product="new-product-14">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="https://greatscottgadgets.com/images/ubertooth-and-antenna.jpeg" alt="New Product 15">
+        <h3>New Product 15</h3>
+        <p>$79.99</p>
+        <button class="buy-button" data-product="new-product-15">Buy Now</button>
+      </div>
+    </div>
+
+    <article>
+      <h2>About Us</h2>
+      <p>TJtech is a company dedicated to providing stylish and functional furniture for modern living. We believe that furniture should not only look great but also serve a purpose in your home or office. That's why we design and create pieces that are both beautiful and practical.</p>
+    </article>
+
+    <aside>
+      <h2>Latest News</h2>
+      <ul>
+        <li><a href="#">New Collection now available</a></li>
+        <li><a href="#">Get a discount on your first purchase</a></li>
+        <li><a href="#">Free shipping on orders over $100</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 TJtech. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
