@@ -55,230 +55,38 @@ body {
 }
 
 /* Responsive Navigation styles */
-.nav-responsive {
+.nav__responsive__ul {
+  display: none;
+  flex-direction: column;
+  align-items: center;
   background-color: #333;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-
-.menu-icon {
-  display: none;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu li {
-  list-style: none;
-  margin-right: 20px;
-}
-
-.menu a {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* Header styles */
-header {
-  background-color: #f2f2f2;
-  padding: 2rem;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-}
-
-header p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-/* Product grid styles */
-.product-grid {
-  display: flex;
-  overflow-x: auto;
-  padding: 2rem;
-}
-
-.product-card {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 1rem;
-  text-align: center;
-  min-width: 280px;
-  margin-right: 2rem;
-}
-
-.image-slider {
-  position: relative;
-  max-width: 100%;
-  height: 200px;
-  overflow: hidden;
-}
-
-.image-slider img {
-  width: 100%;
-  height: 100%;
-  display: none;
-  object-fit: cover;
-}
-
-.image-slider img.active {
-  display: block;
-}
-
-.image-slider .prev,
-.image-slider .next {
-  cursor: pointer;
   position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.image-slider .prev {
+  top: 50px;
   left: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.image-slider .next {
   right: 0;
-  border-radius: 0 3px 3px 0;
+  padding: 10px 0;
+  z-index: 1000;
 }
 
-.image-slider .prev:hover,
-.image-slider .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+.nav__li-responsive {
+  margin: 10px 0;
 }
 
-.product-card h3 {
-  font-size: 1.5rem;
-  margin: 1rem 0;
-}
-
-.product-card p {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-}
-
-.product-card img {
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-  width: 200px; /* Fixed width for images */
-  height: 200px; /* Fixed height for images */
-  object-fit: cover; /* Ensure images are contained */
-}
-
-.buy-button {
-  background-color: #ffcc00;
-  border: none;
-  border-radius: 0.25rem;
-  color: #333Sure, let's continue with the CSS and JavaScript to complete the implementation for horizontal scrolling and category navigation.
-
-### CSS Code (continued)
-
-```css
-/* General styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 16px;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
-}
-
-/* Navigation styles */
-.nav {
-  background-color: #333;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-}
-
-.nav__ul {
-  display: flex;
-  list-style: none;
-}
-
-.nav__li {
-  margin-left: 1rem;
-}
-
-.nav__li:first-child {
-  margin-left: 0;
-}
-
-.nav__li a {
+.nav__li-responsive a {
   color: #fff;
   text-decoration: none;
   transition: all 0.2s ease;
 }
 
-.nav__li a:hover {
+.nav__li-responsive a:hover {
   color: #ffcc00;
-}
-
-.licart i {
-  float: right;
-}
-
-.nav__responsive {
-  display: none;
-}
-
-/* Responsive Navigation styles */
-.nav-responsive {
-  background-color: #333;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
 }
 
 .menu-icon {
   display: none;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu li {
-  list-style: none;
-  margin-right: 20px;
-}
-
-.menu a {
-  color: #fff;
-  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5em;
 }
 
 /* Header styles */
@@ -451,43 +259,13 @@ img {
 @media screen and (max-width: 768px) {
   .nav__ul {
     display: none;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    right: 0;
-    background-color: #333;
-    padding: 20px;
-    margin: 0;
-  }
-
-  .nav__li {
-    margin: 10px 0;
-  }
-
-  .nav-responsive__toggle {
-    display: block;
-  }
-
-  .nav__toggle i {
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .nav__toggle.is-active i {
-    transform: rotate(90deg);
   }
 
   .menu-icon {
     display: block;
-    cursor: pointer;
   }
 
-  .menu-icon i {
-    font-size: 1.5rem;
-  }
-
-  .show-menu {
+  .nav__responsive__ul {
     display: flex;
   }
 }
