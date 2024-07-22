@@ -1,41 +1,39 @@
-// scripts.js
+document.addEventListener('DOMContentLoaded', function () {
+  const navToggle = document.querySelector('.menu-icon');
+  const navResponsive = document.querySelector('.nav__responsive__ul');
 
-function changeSlide(element, n) {
-  let slider = element.parentNode;
-  let images = slider.getElementsByTagName('img');
-  let currentIndex;
+  navToggle.addEventListener('click', function () {
+    navResponsive.classList.toggle('nav__responsive__ul--visible');
+  });
 
-  for (let i = 0; i < images.length; i++) {
-    if (images[i].classList.contains('active')) {
-      currentIndex = i;
-      break;
-    }
+  function changeSlide(slider, n) {
+    const images = slider.parentNode.querySelectorAll('img');
+    let activeIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
+
+    images[activeIndex].classList.remove('active');
+    activeIndex = (activeIndex + n + images.length) % images.length;
+    images[activeIndex].classList.add('active');
   }
 
-  images[currentIndex].classList.remove('active');
-  currentIndex += n;
+  const prevButtons = document.querySelectorAll('.prev');
+  const nextButtons = document.querySelectorAll('.next');
 
-  if (currentIndex >= images.length) {
-    currentIndex = 0;
-  } else if (currentIndex < 0) {
-    currentIndex = images.length - 1;
-  }
+  prevButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      changeSlide(button, -1);
+    });
+  });
 
-  images[currentIndex].classList.add('active');
-}
+  nextButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      changeSlide(button, 1);
+    });
+  });
+});
 
-function showCategory(category) {
-  let categories = document.querySelectorAll('.category');
-  categories.forEach(cat => {
-    if (cat.id === category) {
-      cat.style.display = 'block';
-    } else {
-      cat.style.display = 'none';
-    }
+function showCategory(categoryId) {
+  const categories = document.querySelectorAll('.category');
+  categories.forEach(category => {
+    category.style.display = category.id === categoryId ? 'block' : 'none';
   });
 }
-
-// Show the first category by default
-document.addEventListener('DOMContentLoaded', function() {
-  showCategory('cybersecurity');
-});
