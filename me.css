@@ -91,104 +91,6 @@ header {
     text-align: center;
 }
 
-header hLet's continue with the CSS updates for the product grid and image slider functionality.
-
-### Updated CSS
-
-```css
-/* General styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    font-size: 16px;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-}
-
-/* Navigation styles */
-.nav {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-}
-
-.nav__brand a {
-    color: #fff;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-
-.nav__ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-}
-
-.nav__li {
-    margin-left: 1rem;
-}
-
-.nav__li a {
-    color: #fff;
-    text-decoration: none;
-    transition: all 0.2s ease;
-}
-
-.nav__li a:hover {
-    color: #ffcc00;
-}
-
-.menu-icon {
-    display: none;
-    cursor: pointer;
-    color: white;
-    font-size: 1.5em;
-}
-
-@media (max-width: 768px) {
-    .nav__ul {
-        display: none;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-
-    .nav__ul--visible {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #333;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        right: 0;
-        padding: 1rem;
-        z-index: 1000;
-    }
-
-    .nav__li {
-        margin: 0.5rem 0;
-    }
-}
-
-/* Header styles */
-header {
-    background-color: #f2f2f2;
-    padding: 2rem;
-    text-align: center;
-}
-
 header h1 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
@@ -229,6 +131,8 @@ main {
     width: 100%;
     height: auto;
     display: block;
+    object-fit: contain; /* Ensures the image fits within the dimensions while maintaining its aspect ratio */
+    max-height: 200px; /* Limits the height to maintain consistent appearance */
 }
 
 .product-card h3 {
