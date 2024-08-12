@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TJtech</title>
+  <link rel="stylesheet" href="me.css">
+  <script src="https://kit.fontawesome.com/3426e33aea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav__brand"><a href="#">TJtech</a></div>
+    <ul class="nav__ul">
+      <li class="nav__li"><a href="flipper.html"><i class="fas fa-th-large"></i> Flipper Zero</a></li>
+      <li class="nav__li"><a href="cibersecurity.html"><i class="fas fa-shield-alt"></i> Cybersecurity Tools</a></li>
+      <li class="nav__li"><a href="PC.html"><i class="fas fa-desktop"></i> PC Mods</a></li>
+      <li class="nav__li"><a href="accesories.html"><i class="fas fa-cogs"></i> Accessories</a></li>
+      <li class="nav__li"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+    </ul>
+    <div class="menu-icon">
+      <i class="fa fa-bars"></i>
+    </div>
+  </nav>
+
+  <header>
+    <h1>TJtech</h1>
+    <p>Todo para gamers, hackers, programadores y geeks!</p>
+  </header>
+
+  <main>
+    <div class="category" id="flipper-zero">
+      <h2>Flipper Zero</h2>
+      <div class="product-grid">
+        <!-- Flipper Zero Product -->
+        <div class="product-card">
+          <div class="image-slider">
+            <img src="https://shop.flipperzero.one/cdn/shop/products/top_1024x1024@2x.png?v=1671722838" alt="Flipper Zero - Top View" class="active">
+            <img src="https://shop.flipperzero.one/cdn/shop/products/side_1024x1024@2x.png?v=1671722838" alt="Flipper Zero - Side View">
+            <img src="https://shop.flipperzero.one/cdn/shop/products/bottom-uwu_1024x1024@2x.png?v=1671722807" alt="Flipper Zero - Bottom View">
+            <button class="prev" onclick="changeSlide(this, -1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(this, 1)">&#10095;</button>
+          </div>
+          <h3>Flipper Zero</h3>
+          <p>$199.99</p>
+          <button class="buy-button" data-product="flipper-zero">Buy Now</button>
+        </div>
+
+        <!-- WiFi Dev Board Product -->
+        <div class="product-card">
+          <div class="image-slider">
+            <img src="https://shop.flipperzero.one/cdn/shop/products/fpr_zero_wifi_3.jpg?v=1657197383" alt="WiFi Dev Board - Top View" class="active">
+            <img src="https://shop.flipperzero.one/cdn/shop/products/fpr_zero_wifi_1.jpg?v=1657197383" alt="WiFi Dev Board - Side View">
+            <img src="https://shop.flipperzero.one/cdn/shop/products/fpr_zero_wifi_2.jpg?v=1657197383" alt="WiFi Dev Board - Bottom View">
+            <button class="prev" onclick="changeSlide(this, -1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(this, 1)">&#10095;</button>
+          </div>
+          <h3>WiFi Dev Board</h3>
+          <p>$29.99</p>
+          <button class="buy-button" data-product="wifi-dev-board">Buy Now</button>
+        </div>
+
+        <!-- New Flipper Zero Product -->
+        <div class="product-card">
+          <div class="image-slider">
+            <img src="https://shop.flipperzero.one/cdn/shop/files/main_1024x1024@2x.jpg?v=1707419486" alt="Flipper Zero New - Main View" class="active">
+            <img src="https://shop.flipperzero.one/cdn/shop/files/vgm_tilted_riho_110x110@2x.png?v=1707419486" alt="Flipper Zero New - Tilted View">
+            <img src="https://shop.flipperzero.one/cdn/shop/files/vgm_top_110x110@2x.png?v=1707419486" alt="Flipper Zero New - Top View">
+            <button class="prev" onclick="changeSlide(this, -1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(this, 1)">&#10095;</button>
+          </div>
+          <h3>Flipper Zero New</h3>
+          <p>$249.99</p>
+          <button class="buy-button" data-product="flipper-zero-new">Buy Now</button>
+        </div>
+
+        <!-- Protoboard Product -->
+        <div class="product-card">
+          <div class="image-slider">
+            <img src="https://shop.flipperzero.one/cdn/shop/products/all_proto_110x110@2x.jpg?v=1639572671" alt="Protoboard - All View" class="active">
+            <img src="https://shop.flipperzero.one/cdn/shop/products/protoboard_big_1024x1024@2x.jpg?v=1639572676" alt="Protoboard - Big View">
+            <img src="https://shop.flipperzero.one/cdn/shop/products/protoboard_small_8473c11a-a41e-424c-b443-e9e8c949a307_1024x1024@2x.jpg?v=1639572676" alt="Protoboard - Small View">
+            <button class="prev" onclick="changeSlide(this, -1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(this, 1)">&#10095;</button>
+          </div>
+          <h3>Protoboard</h3>
+          <p>$19.99</p>
+          <button class="buy-button" data-product="protoboard">Buy Now</button>
+        </div>
+
+        <!-- New Product 1 -->
+        <div class="product-card">
+          <img src="https://m.media-amazon.com/images/I/71aI9cFqC6L._AC_SL1500_.jpg" alt="New Product 1">
+          <h3>Antena de Alto Alcance</h3>
+          <p>$149.99</p>
+          <button class="buy-button" data-product="new-product-1">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 TJtech. All rights reserved.</p>
+  </footer>     
+
+  <script src="me.js"></script>
+</body>
+</html>
