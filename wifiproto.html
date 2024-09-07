@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WiFi Devboard - TJtech</title>
+  <link rel="stylesheet" href="me.css">
+  <script src="https://kit.fontawesome.com/3426e33aea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="nav">
+    <div class="nav__brand"><a href="#">TJtech</a></div>
+    <ul class="nav__ul">
+      <li class="nav__li"><a href="flipper.html"><i class="fas fa-th-large"></i> Flipper Zero</a></li>
+      <li class="nav__li"><a href="cibersecurity.html"><i class="fas fa-shield-alt"></i> Cybersecurity Tools</a></li>
+      <li class="nav__li"><a href="PC.html"><i class="fas fa-desktop"></i> PC Mods</a></li>
+      <li class="nav__li"><a href="accesories.html"><i class="fas fa-cogs"></i> Accessories</a></li>
+    </ul>
+    <div class="menu-icon">
+      <i class="fa fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Product Header -->
+  <header>
+    <h1>WiFi Devboard for Flipper Zero</h1>
+    <p>Expand the capabilities of your Flipper Zero with the WiFi Devboard.</p>
+  </header>
+
+  <!-- Main Product Content -->
+  <main>
+    <section class="product-details">
+      <div class="image-slider">
+        <div class="slider-track">
+          <img src="https://shop.flipperzero.one/cdn/shop/products/fpr_zero_wifi_3.jpg?v=1657197383" alt="WiFi Dev Board - Top View" class="active">
+          <img src="https://shop.flipperzero.one/cdn/shop/products/fpr_zero_wifi_1.jpg?v=1657197383" alt="WiFi Dev Board - Side View">
+          <img src="https://shop.flipperzero.one/cdn/shop/products/fpr_zero_wifi_2.jpg?v=1657197383" alt="WiFi Dev Board - Bottom View">
+        </div>
+        <button class="prev" onclick="changeSlide(this, -1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(this, 1)">&#10095;</button>
+      </div>
+
+      <div class="product-info">
+        <h2>WiFi Devboard</h2>
+        <p class="product-price">$29.00</p>
+        <p class="product-description">
+          The WiFi Devboard for Flipper Zero is based on the ESP32-S2 module, offering wireless Flipper Zero firmware updates and advanced in-circuit debugging via USB or Wi-Fi. It also supports Wi-Fi penetration testing features like PMKID capturing and deauthentication attacks, which require additional implementation.
+        </p>
+        <ul class="product-features">
+          <li>Wireless firmware updates</li>
+          <li>Advanced in-circuit debugging</li>
+          <li>Wi-Fi penetration testing capabilities</li>
+          <li>ESP32-S2 module</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 TJtech. All rights reserved.</p>
+  </footer>     
+
+  <script src="me.js"></script>
+</body>
+</html>

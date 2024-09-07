@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TJtech</title>
+  <link rel="stylesheet" href="me.css">
+  <script src="https://kit.fontawesome.com/3426e33aea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav__brand"><a href="#">TJtech</a></div>
+    <ul class="nav__ul">
+      <li class="nav__li"><a href="flipper.html"><i class="fas fa-th-large"></i> Flipper Zero</a></li>
+      <li class="nav__li"><a href="cibersecurity.html"><i class="fas fa-shield-alt"></i> Cybersecurity Tools</a></li>
+      <li class="nav__li"><a href="PC.html"><i class="fas fa-desktop"></i> PC Mods</a></li>
+      <li class="nav__li"><a href="accesories.html"><i class="fas fa-cogs"></i> Accessories</a></li>
+      <li class="nav__li"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+    </ul>
+    <div class="menu-icon">
+      <i class="fa fa-bars"></i>
+    </div>
+  </nav>
+
+  <header>
+    <h1>TJtech</h1>
+    <p>Todo para hackers Eticos</p>
+  </header>
+
+  <main>
+    <div class="category" id="flipper-zero">
+      <h2>Hacking Tools</h2>
+      <div class="product-grid">
+
+        <!-- USB Rubberducky -->
+        <div class="product-card">
+          <div class="image-slider">
+            <img src="https://duet-cdn.vox-cdn.com/thumbor/0x0:2040x1360/640x427/filters:focal(1020x680:1021x681):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/23949203/226141_rubberDucky.jpg" alt="USB Rubberducky - Top View" class="active">
+            <button class="prev" onclick="changeSlide(this, -1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(this, 1)">&#10095;</button>
+          </div>
+          <h3>USB Rubberducky</h3>
+          <p>$49.99</p>
+          <a href="rubberducky.html" class="learn-more-button">Learn More</a>
+        </div>
+
+        <!-- WiFi Coconut -->
+        <div class="product-card">
+          <div class="image-slider">
+            <img src="https://duet-cdn.vox-cdn.com/thumbor/0x0:3000x2000/640x427/filters:focal(1500x1000:1501x1001):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/24127010/Wifi_Coconut.jpg" alt="WiFi Coconut - Top View" class="active">
+            <button class="prev" onclick="changeSlide(this, -1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(this, 1)">&#10095;</button>
+          </div>
+          <h3>The WiFi Coconut</h3>
+          <p>$29.99</p>
+          <a href="coconutwifi.html" class="learn-more-button">Learn More</a>
+        </div>
+
+        <!-- HackCat WiFi -->
+        <div class="product-card">
+          <div class="image-slider">
+            <img src="https://duet-cdn.vox-cdn.com/thumbor/0x0:3000x2000/640x427/filters:focal(1500x1000:1501x1001):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/24142244/HackCat_Wifi_Nugget.jpeg" alt="HackCat WiFi - Main View" class="active">
+            <button class="prev" onclick="changeSlide(this, -1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(this, 1)">&#10095;</button>
+          </div>
+          <h3>HackCat WiFi</h3>
+          <p>$249.99</p>
+          <a href="hackcat.html" class="learn-more-button">Learn More</a>
+        </div>
+
+        <!-- O.M.G Cable -->
+        <div class="product-card">
+          <div class="image-slider">
+            <img src="https://duet-cdn.vox-cdn.com/thumbor/0x0:2040x1360/640x427/filters:focal(1020x680:1021x681):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/23957231/acastro_226156_omgCable_0001.jpg" alt="O.M.G Cable - All View" class="active">
+            <button class="prev" onclick="changeSlide(this, -1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(this, 1)">&#10095;</button>
+          </div>
+          <h3>O.M.G Cable</h3>
+          <p>$19.99</p>
+          <a href="usbcable.html" class="learn-more-button">Learn More</a>
+        </div>
+
+        <!-- Deauther Watch -->
+        <div class="product-card">
+          <div class="image-slider">
+            <img src="https://duet-cdn.vox-cdn.com/thumbor/0x0:3000x2000/640x427/filters:focal(1500x1000:1501x1001):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/24123262/WiFiDeauther.jpg" alt="Deauther Watch - Top View" class="active">
+            <button class="prev" onclick="changeSlide(this, -1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(this, 1)">&#10095;</button>
+          </div>
+          <h3>Deauther Watch</h3>
+          <p>$49.99</p>
+          <a href="watch.html" class="learn-more-button">Learn More</a>
+        </div>
+
+        <!-- ChameleonMini -->
+        <div class="product-card">
+          <img src="https://duet-cdn.vox-cdn.com/thumbor/0x0:3000x2000/640x427/filters:focal(1500x1000:1501x1001):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/24120516/ChameleonMini.jpg" alt="ChameleonMini - Main View">
+          <h3>ChameleonMini</h3>
+          <p>$149.99</p>
+          <a href="chameleonmini.html" class="learn-more-button">Learn More</a>
+        </div>
+
+        <!-- Additional Product 1 -->
+        <div class="product-card">
+          <img src="https://hackerwarehouse.com/wp-content/uploads/2014/04/hackrf-one-ant500-VB5A0572a-510x320.jpg" alt="Additional Product 1 - Main View">
+          <h3>HackRF One</h3>
+          <p>$490</p>
+          <a href="hackRF.html" class="learn-more-button">Learn More</a>
+        </div>
+
+        <!-- Additional Product 2 -->
+        <div class="product-card">
+          <img src="https://hackerwarehouse.com/wp-content/uploads/2018/07/proxmark3.rdv4_.01.top-454A0023a.jpg" alt="Additional Product 2 - Main View">
+          <h3>Proxmark3 RDV4 Kit</h3>
+          <p>$79.99</p>
+          <a href="rdv4.html" class="learn-more-button">Learn More</a>
+        </div>
+
+        <!-- Additional Product 3 -->
+        <div class="product-card">
+          <img src="https://hackerwarehouse.com/wp-content/uploads/2021/12/WiFi.Pineapple-Mark.VII-454A0313-510x340.jpg" alt="Additional Product 3 - Main View">
+          <h3>WiFi Pineapple Mark VII</h3>
+          <p>$59.99</p>
+          <a href="piñawifi.html" class="learn-more-button">Learn More</a>
+        </div>
+
+        <!-- Additional Product 4 -->
+        <div class="product-card">
+          <img src="https://duet-cdn.vox-cdn.com/thumbor/0x0:3000x2000/640x427/filters:focal(1500x1000:1501x1001):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/24142246/Ubertooth_One.jpeg" alt="Additional Product 4 - Main View">
+          <h3>ubertooh</h3>
+          <p>$39.99</p>
+          <a href="ubertooth.html" class="learn-more-button">Learn More</a>
+        </div>
+
+        <!-- Additional Product 5 -->
+        <div class="product-card">
+          <img src="https://duet-cdn.vox-cdn.com/thumbor/0x0:3000x2000/640x427/filters:focal(1500x1000:1501x1001):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/24142245/Hunter_Cat_skimmer_detector.jpeg" alt="Additional Product 5 - Main View">
+          <p>$29.99</p>
+          <h3>Hunter cat </h3>
+            <a href="huntercat.html" class="learn-more-button">Learn More</a>
+          </div>
+  
+        </div>
+      </div>
+    </main>
+  
+    <footer>
+      <p>&copy; 2023 TJtech. All rights reserved.</p>
+    </footer>     
+  
+    <script src="me.js"></script>
+  </body>
+  </html>
