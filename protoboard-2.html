@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prototyping Boards - TJtech</title>
+  <link rel="stylesheet" href="me.css">
+  <script src="https://kit.fontawesome.com/3426e33aea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="nav">
+    <div class="nav__brand"><a href="#">TJtech</a></div>
+    <ul class="nav__ul">
+      <li class="nav__li"><a href="flipper.html"><i class="fas fa-th-large"></i> Flipper Zero</a></li>
+      <li class="nav__li"><a href="cibersecurity.html"><i class="fas fa-shield-alt"></i> Cybersecurity Tools</a></li>
+      <li class="nav__li"><a href="PC.html"><i class="fas fa-desktop"></i> PC Mods</a></li>
+      <li class="nav__li"><a href="accesories.html"><i class="fas fa-cogs"></i> Accessories</a></li>
+    </ul>
+    <div class="menu-icon">
+      <i class="fa fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Product Header -->
+  <header>
+    <h1>Prototyping Boards for Flipper Zero</h1>
+    <p>Create your own DIY modules with these specialized prototyping boards.</p>
+  </header>
+
+  <!-- Main Product Content -->
+  <main>
+    <section class="product-details">
+      <div class="image-slider">
+        <div class="slider-track">
+          <img src="https://shop.flipperzero.one/cdn/shop/products/proto-board-1.jpg" alt="Prototyping Boards - Front View" class="active">
+          <img src="https://shop.flipperzero.one/cdn/shop/products/proto-board-2.jpg" alt="Prototyping Boards - Side View">
+          <img src="https://shop.flipperzero.one/cdn/shop/products/proto-board-3.jpg" alt="Prototyping Boards - Top View">
+        </div>
+        <button class="prev" onclick="changeSlide(this, -1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(this, 1)">&#10095;</button>
+      </div>
+
+      <div class="product-info">
+        <h2>Prototyping Boards</h2>
+        <p class="product-price">$10.00</p>
+        <p class="product-description">
+          The Prototyping Boards for Flipper Zero are designed for DIY enthusiasts to create custom modules using the Flipper Zero GPIO header. Each package includes two small breakout boards, one large breakout board, and pin headers that are not soldered, offering flexibility in your projects.
+        </p>
+        <ul class="product-features">
+          <li>2 pcs. Small Breakout board</li>
+          <li>1 pcs. Large Breakout board</li>
+          <li>Pin headers (not soldered)</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 TJtech. All rights reserved.</p>
+  </footer>     
+
+  <script src="me.js"></script>
+</body>
+</html>
